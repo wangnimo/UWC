@@ -1,5 +1,6 @@
 # 相机标定软件V1.0
-![演示](.\doc\screenshot\MyVideo_4.gif)
+
+![演示](./doc/screenshot/MyVideo_4.gif)
 
 *TODO:*
 - [x] 支持海康机器人工业相机
@@ -40,3 +41,6 @@ D:\Qt\6.6.3\msvc2019_64\bin
 D:\opencv\build\x64\vc16\bin
 ```
 3. 使用Qt Creator 构建
+
+### 许可证
+GNU GPL v3:  See the [LICENSE](https://github.com/wangnimo/UWC/LICENSE) file for details.
