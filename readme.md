@@ -43,4 +43,4 @@ D:\opencv\build\x64\vc16\bin
 3. 使用Qt Creator 构建
 
 ### 许可证
-GNU GPL v3:  See the [LICENSE](https://github.com/wangnimo/UWC/LICENSE) file for details.
+GNU GPL v3:  See the [LICENSE](https://github.com/wangnimo/UWC/blob/main/LICENSE) file for details.
