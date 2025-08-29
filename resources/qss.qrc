@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/uwc_style.qss</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportGeneratorModule</class>
+ <widget class="QWidget" name="ReportGeneratorModule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>报告生成</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="reportSettingsGroup">
+     <property name="title">
+      <string>报告设置</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelReportTitle">
+        <property name="text">
+         <string>报告标题:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="reportTitleEdit">
+        <property name="text">
+         <string>水下相机标定报告</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelAuthor">
+        <property name="text">
+         <string>作者:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="authorEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelCompany">
+        <property name="text">
+         <string>单位:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="companyEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelReportType">
+        <property name="text">
+         <string>报告类型:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="reportTypeCombo">
+        <item>
+         <property name="text">
+          <string>完整报告</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>简要报告</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>技术报告</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QGroupBox" name="includeGroup">
+        <property name="title">
+         <string>报告包含内容</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="includeParametersCheck">
+           <property name="text">
+            <string>标定参数</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="includeErrorsCheck">
+           <property name="text">
+            <string>误差分析</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="includeVisualizationsCheck">
+           <property name="text">
+            <string>可视化结果</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="includeImagesCheck">
+           <property name="text">
+            <string>原始图像</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTextEdit" name="reportPreviewEdit">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="imagesListWidget">
+       <property name="iconSize">
+        <size>
+         <width>128</width>
+         <height>96</height>
+        </size>
+       </property>
+       <property name="resizeMode">
+        <enum>QListView::ResizeMode::Adjust</enum>
+       </property>
+       <property name="viewMode">
+        <enum>QListView::ViewMode::IconMode</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="generateReportButton">
+       <property name="text">
+        <string>生成报告</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="previewReportButton">
+       <property name="text">
+        <string>预览报告</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportPdfButton">
+       <property name="text">
+        <string>导出PDF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportWordButton">
+       <property name="text">
+        <string>导出Word</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveTemplateButton">
+       <property name="text">
+        <string>保存模板</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>statusLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

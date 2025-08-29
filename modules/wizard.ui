@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalibrationWizard</class>
+ <widget class="QWizard" name="CalibrationWizard">
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>相机标定向导</string>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::ModernStyle</enum>
+  </property>
+  <property name="options">
+   <set>QWizard::CancelButtonOnLeft|QWizard::HaveHelpButton|QWizard::HaveNextButtonOnLastPage|QWizard::HaveFinishButtonOnEarlyPages</set>
+  </property>
+  <widget class="QWizardPage" name="wizardPage">
+   <property name="title">
+    <string>页面标题</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>页面内容</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>CalibrationWizard</sender>
+   <signal>helpRequested()</signal>
+   <receiver>CalibrationWizard</receiver>
+   <slot>showHelp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>766</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>766</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showHelp()</slot>
+ </slots>
+</ui>

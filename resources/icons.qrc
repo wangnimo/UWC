@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>imgs/acquisition.png</file>
+        <file>imgs/calibration.png</file>
+        <file>imgs/data.png</file>
+        <file>imgs/device.png</file>
+        <file>imgs/help.png</file>
+        <file>imgs/logo.png</file>
+        <file>imgs/report.png</file>
+        <file>imgs/result.png</file>
+        <file>imgs/settings.png</file>
+        <file>imgs/wizard.png</file>
+        <file>imgs/check.png</file>
+    </qresource>
+</RCC>
